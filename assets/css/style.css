@@ -46,7 +46,7 @@ button:hover {
   position: relative;
   padding: 0.4em;
   border: 2px solid #999;
-  width: 400px;
+  width: 80%;
 }
 
 .bar input {
