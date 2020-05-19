@@ -59,7 +59,7 @@ function encontraAcao(valor, nome, moeda) {
             const data = new Date()
             let ultimaTransacao = cotacao['07. latest trading day'].split('-')
             dom.resultado.innerHTML = `<tr><td colspan="2"><h1>${nome}</h1></td></tr>`
-            dom.resultado.innerHTML += `<tr><td>Consulta em</td><td>${data.getDate()}/${data.getDay()+1}/${data.getFullYear()}</td></tr>`
+            dom.resultado.innerHTML += `<tr><td>Consulta em</td><td>${data.getDate()}/${data.getMonth()+1}/${data.getFullYear()}</td></tr>`
             dom.resultado.innerHTML += `<tr><td>Cotação Atual</td><td><strong>${Number(cotacao['05. price']).toLocaleString('pt-BR', { style: 'currency', currency: moeda })}</td></strong></tr>`
             dom.resultado.innerHTML += `<tr><td>Simbolo</td><td>${cotacao['01. symbol'].split('.').shift()}</td></tr>`
             dom.resultado.innerHTML += `<tr><td>Abertura</td><td>${Number(cotacao['02. open']).toLocaleString('pt-BR', { style: 'currency', currency: moeda })}</td></tr>`
