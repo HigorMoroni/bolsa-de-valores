@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <main>
+            <h1>Cotações nas Bolsas de Valores Mundiais</h1>
+            <table>
+                <tr>
+                    <td>
+                        <div class="bar"><input type="text" id="inputBusca" placeholder="Digite o nome do Ativo"/></div>
+                    </td>
+                    <td>
+                        <button id="btnBusca">OK</button>
+                    </td>
+                </tr>
+            </table>           
+            <table class="resultado"></table>
+        </main>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
