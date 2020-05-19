@@ -76,7 +76,7 @@ table {
 }
 @media (max-width: 759px) {
   table.resultado {
-    font-size: 0.4em;
+    font-size: 0.6em;
   }
   table.resultado tr {
     max-width: 750px;
