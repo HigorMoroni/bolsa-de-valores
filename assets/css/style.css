@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
   --primary-color: rgb(233, 200, 56);
-  --primary-color-darker: rgb(9, 48, 56);
+  --primary-color-darker: rgb(90, 81, 0);
 }
 
 * {
@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 750px;
   margin: 50px auto;
   background: #fff;
   padding: 20px;
@@ -40,6 +40,10 @@ button {
 
 button:hover {
   background: var(--primary-color-darker);
+}
+
+table {
+  width: 100%;
 }
 
 .bar {
@@ -72,7 +76,10 @@ button:hover {
 }
 @media (max-width: 759px) {
   table.resultado {
-    font-size: 0.5em;
+    font-size: 0.4em;
+  }
+  table.resultado tr {
+    max-width: 750px;
   }
 } 
 table.resultado {
